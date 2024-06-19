@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+        <div class="weather-container">
+             <!-- grant location container-->
+            <div class="grant-location-container">
+                <img src="./images/location.png" width="80" height="80" loading="lazy">
+                <p>Grant Location Aczess</p>
+                <p>Allow Access to get Weather Information</p>
+                <button class="btn">Grant Access</button>
+            </div>
+            <!-- search form -> form-container-->
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search for City..." data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="./images/search.png"  width="20" height="20" loading="lazy">
+                </button>
+            </form>
+            <!--- loading screen container -->
+            
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
